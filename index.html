@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Password Generator that integrates Comunica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="container">
+	<h2>Password Generator</h2>
+	<div class="result-container">
+		<span id="result"></span>
+
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
+
+	
+	<div class="settings">
+		<!-- Need to fix this -- just do it all on button click-->
+		<div class="pass-indicator">
+			<label id="strength"></label>
+		</div>
+		<div class="pass-length">
+			<div class="setting">
+				<input type="range" id="length" min='4' max='20' value='8' oninput="rangeValue.innerText = this.value">
+		</div>
+		
+		<div class="setting">
+			<label id="lenLabel"><em>Password length:</em></label>
+			<p id="rangeValue"><em>10</em></p>
+		</div>
+
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+
+	</div>
+
+	<button class="btn btn-large" id="generate">Generate password</button>
+</div>
