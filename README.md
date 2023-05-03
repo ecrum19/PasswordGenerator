@@ -1,5 +1,5 @@
 # PasswordGenerator
-Project to display skill with JavaScript, HTML, and CSS coding formats.
+Project to display skill with JavaScript, HTML, and CSS development and implementation.
 
 To display the HTML product:
 
